@@ -818,13 +818,13 @@
 <ol>
   <li>Log in to your Magento server.</li>
   <li>
-    <p>Set write permissions on the following directories using a file manager application provided by your shared hosting provider:</p>
+    <p>Use a file manager application provided by your shared hosting provider to verify write permissions are set on the following directories:</p>
 
     <ul>
       <li><code>vendor</code> (Composer or compressed archive installation)</li>
       <li><code>app/etc</code></li>
-      <li><code>lib</code></li>
       <li><code>pub/static</code></li>
+      <li><code>var</code></li>
       <li>Any other static resources</li>
     </ul>
   </li>
@@ -832,8 +832,8 @@
     <p>If you have command-line access, enter the following commands in the order shown:</p>
 
     <pre><code>cd &lt;your Magento install dir&gt;
-find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} \;
-find var vendor pub/static pub/media app/etc -type d -exec chmod g+w {} \;
+find var vendor pub/static pub/media app/etc var -type f -exec chmod u+w {} \;
+find var vendor pub/static pub/media app/etc var -type d -exec chmod u+w {} \;
 chmod u+x bin/magento
 </code></pre>
 
@@ -851,6 +851,10 @@ chmod u+x bin/magento
     </ul>
   </li>
 </ol>
+
+<div class="bs-callout bs-callout-info" id="info">
+  <p>To further restrict permissions after installing the Magento software, you [configure a Magento umask](/guides/v2.0/install-gde/install/post-install-umask.html).</p>
+</div>
 
 </div></div>
 
