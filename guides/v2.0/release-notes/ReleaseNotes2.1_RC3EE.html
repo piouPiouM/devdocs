@@ -1004,20 +1004,35 @@
   <h2 id="installation-and-upgrade-instructions-1">Installation and upgrade instructions</h2>
   <p>You can install Magento Enterprise Edition 2.1 (including a Release Candidate) using Composer. </p>
 
-  <p>This Release Candidate is for test purposes only. Do not install it in a production environment.</p>
+  <p>A Release Candidate is for testing purposes only. Do not install it in a production environment.</p>
 
-  <h3 id="install-rc-composer">Install using Composer</h3>
+  <h3 id="install-rc-composer">Get Magento EE using Composer</h3>
   <p>This Release Candidate is available from <code>repo.magento.com</code>. Before installing this Release Candidate using Composer,  familiarize yourself with these  <a href="/guides/v2.0/install-gde/prereq/integrator_install.html" target="_blank">prerequisites</a>, then run:</p>
 
   <pre><code>composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=&lt;version&gt; &lt;installation directory name&gt;
 </code></pre>
 
-  <p>where <code>&lt;version&gt;</code> is <code>2.1.0</code> (GA release) or <code>2.1.0-rc3</code> for RC3</p>
+  <p>where <code>&lt;version&gt;</code> is <code>2.1.0</code> (GA release) or <code>2.1.0-rc3</code> for Release Candidate 3 (RC3)</p>
 
   <p>For example, to install 2.1.0 in the <code>magento2</code> directory:</p>
 
   <pre><code>composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.1.0 magento2
 </code></pre>
+
+  <h3 id="complete-the-installation">Complete the installation</h3>
+  <p>After you get the EE software:</p>
+
+  <ol>
+    <li><a href="/guides/v2.0/install-gde/prereq/file-system-perms.html">Set file system ownership and permissions</a>.</li>
+    <li>
+      <p>Install the software:</p>
+
+      <ul>
+        <li><a href="/guides/v2.0/install-gde/install/web/install-web.html">Web Setup Wizard</a></li>
+        <li><a href="/guides/v2.0/install-gde/install/cli/install-cli.html">Command line</a></li>
+      </ul>
+    </li>
+  </ol>
 
   <h3 id="upgrades">Upgrades</h3>
   <p>To upgrade to Magento 2.1 (including a Release Candidate), see <a href="/guides/v2.0/comp-mgr/release-notes/tech_bull_21-upgrade.html">Upgrade to Magento version 2.1 (June 22, 2016)</a>.</p>
