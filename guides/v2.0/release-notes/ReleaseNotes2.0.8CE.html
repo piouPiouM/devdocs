@@ -709,12 +709,12 @@
       <li><a href="#known-issue">Known issue</a></li>
       <li><a href="#system-requirements">System requirements</a></li>
       <li><a href="#installation-instructions">Installation instructions</a>        <ul>
-          <li><a href="#bdownload-a-new-installationb"><b>Download a new installation</b></a></li>
-          <li><a href="#binstall-a-new-installation-with-composerb"><b>Install a new installation with Composer</b></a></li>
-          <li><a href="#bupgrade-using-the-setup-wizardb"><b>Upgrade using the Setup Wizard</b></a></li>
-          <li><a href="#bupgrade-an-existing-installation-from-the-github-repositoryb"><b>Upgrade an existing installation from the GitHub repository</b></a></li>
-          <li><a href="#bupgrade-an-existing-installation-from-the-github-repositoryb-1"><b>Upgrade an existing installation from the GitHub repository</b></a></li>
-          <li><a href="#bupgrade-using-the-command-lineb"><b>Upgrade using the command line</b></a></li>
+          <li><a href="#download-a-new-installation">Download a new installation</a></li>
+          <li><a href="#install-a-new-installation-with-composer">Install a new installation with Composer</a></li>
+          <li><a href="#upgrade-using-the-setup-wizard">Upgrade using the Setup Wizard</a></li>
+          <li><a href="#upgrade-an-existing-installation-from-the-github-repository">Upgrade an existing installation from the GitHub repository</a></li>
+          <li><a href="#upgrade-an-existing-installation-from-the-github-repository-1">Upgrade an existing installation from the GitHub repository</a></li>
+          <li><a href="#upgrade-using-the-command-line">Upgrade using the command line</a></li>
         </ul>
       </li>
       <li><a href="#migration-toolkits">Migration toolkits</a></li>
@@ -751,7 +751,7 @@
 
 <!--- 46014 -->
 <ul>
-  <li>Magento now displays error messages on the page where the error occurred. Previously, error messages invoked by actions on the login page were not displayed until you left that page. </li>
+  <li>Magento now displays error messages on the page where the error occurred. Previously, error messages invoked by actions on the login page were not displayed until you left that page.</li>
 </ul>
 
 <!--- 51072 -->
@@ -896,18 +896,18 @@
 
 <!--- 52923-->
 <ul>
-  <li>Switching to Varnish no longer causes the Category menu to force HTTPS links. <a href="https://github.com/magento/magento2/issues/4540" target="_blank">(GITHUB-4540)</a> </li>
+  <li>Switching to Varnish no longer causes the Category menu to force HTTPS links. <a href="https://github.com/magento/magento2/issues/4540" target="_blank">(GITHUB-4540)</a></li>
 </ul>
 
 <h3 id="known-issue">Known issue</h3>
 
 <!--- 49556 -->
-<p>The POST V1/shipment and other APIs that include a list of items might return an error if an item’s quantity (<code>qty</code>) is specified before its ID (<code>order_item_id</code>, for example). </p>
+<p>The POST V1/shipment and other APIs that include a list of items might return an error if an item’s quantity (<code>qty</code>) is specified before its ID (<code>order_item_id</code>, for example).</p>
 
 <p><strong>Workaround:</strong> Make sure to specify an item’s ID before specifying quantity. (49556)</p>
 
 <h3 id="system-requirements">System requirements</h3>
-<p>Our technology stack is built on PHP and MySQL. Magento 2.0.1 and later supports PHP 5.5, 5.6, 7.0.2, and MySQL 5.6. For more information, see 
+<p>Our technology stack is built on PHP and MySQL. Magento 2.0.1 and later supports PHP 5.5, 5.6, 7.0.2, and MySQL 5.6. For more information, see
 <a href="/guides/v2.0/install-gde/system-requirements.html" target="_blank">System Requirements</a>.</p>
 
 <h3 id="installation-instructions">Installation instructions</h3>
@@ -915,7 +915,7 @@
 <h4>New installations</h4>
 <p>New users can now complete a full installation of Magento Community Edition 2.0.8 from an archive file on the <a href="https://www.magentocommerce.com/download" target="_blank">Download</a> page.</p>
 
-<h5 id="bdownload-a-new-installationb"><b>Download a new installation</b></h5>
+<h5 id="download-a-new-installation">Download a new installation</h5>
 
 <ol>
   <li>
@@ -929,7 +929,7 @@
   </li>
 </ol>
 
-<h5 id="binstall-a-new-installation-with-composerb"><b>Install a new installation with Composer</b></h5>
+<h5 id="install-a-new-installation-with-composer">Install a new installation with Composer</h5>
 
 <ol>
   <li>
@@ -943,20 +943,20 @@
   </li>
 </ol>
 
-<h4><b>Upgrade existing installations</b></h4>
+<h4>Upgrade existing installations</h4>
 
 <p>This section discusses how to upgrade to 2.0.8.</p>
 
-<h5 id="bupgrade-using-the-setup-wizardb"><b>Upgrade using the Setup Wizard</b></h5>
+<h5 id="upgrade-using-the-setup-wizard">Upgrade using the Setup Wizard</h5>
 <p>Use the instructions in <a href="/guides/v2.0/comp-mgr/upgrader/upgrade-start.html">Start System Upgrade</a>. When prompted to choose a version, choose 2.0.8.</p>
 
-<h5 id="bupgrade-an-existing-installation-from-the-github-repositoryb"><b>Upgrade an existing installation from the GitHub repository</b></h5>
+<h5 id="upgrade-an-existing-installation-from-the-github-repository">Upgrade an existing installation from the GitHub repository</h5>
 <p>Developers who contribute to the CE codebase can <a href="/guides/v2.0/comp-mgr/bk-compman-upgrade-guide.html" target="_blank">upgrade manually</a> from the Magento CE GitHub repository.</p>
 
 <p>Go to the <a href="/guides/v2.0/install-gde/install/cli/dev_update-magento.html" target="_blank">Contributing Developers</a> page.
 Use the instructions in <a href="/guides/v2.0/comp-mgr/upgrader/upgrade-start.html">Start System Upgrade</a>. When prompted to choose a version, choose 2.0.8.</p>
 
-<h5 id="bupgrade-an-existing-installation-from-the-github-repositoryb-1"><b>Upgrade an existing installation from the GitHub repository</b></h5>
+<h5 id="upgrade-an-existing-installation-from-the-github-repository-1">Upgrade an existing installation from the GitHub repository</h5>
 <p>Developers who contribute to the CE codebase can <a href="/guides/v2.0/comp-mgr/bk-compman-upgrade-guide.html" target="_blank">upgrade manually</a> from the Magento CE GitHub repository.</p>
 
 <ol>
@@ -968,7 +968,7 @@ Use the instructions in <a href="/guides/v2.0/comp-mgr/upgrader/upgrade-start.ht
   </li>
 </ol>
 
-<h5 id="bupgrade-using-the-command-lineb"><b>Upgrade using the command line</b></h5>
+<h5 id="upgrade-using-the-command-line">Upgrade using the command line</h5>
 <p>To upgrade to 2.0.8 using the command line:</p>
 
 <ol>
@@ -997,10 +997,8 @@ composer update
 composer update
 </code></pre>
   </li>
-  <li>If prompted, enter your <a href="/guides/v2.0/comp-mgr/prereq/prereq_auth-token.html">authentication keys</a>.</li>
   <li>
-    <p>If prompted, enter your <a href="/guides/v2.0/comp-mgr/prereq/prereq_auth-token.html">authentication keys</a>.
-»»»&gt; 70118202d9d68f1f9f60eb972f29512e5034adba</p>
+    <p>If prompted, enter your <a href="/guides/v2.0/comp-mgr/prereq/prereq_auth-token.html">authentication keys</a>.</p>
   </li>
   <li>
     <p>Update the database schema and data:</p>
@@ -1020,7 +1018,6 @@ composer update
 <p>The <a href="/guides/v2.0/migration/migration-migrate.html" target="_blank">Data Migration Tool</a> helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see  <a href="/guides/v2.0/migration/migration-tool-install.html" target="_blank">Install the Data Migration Tool</a>. Consider exploring or contributing to the <a href="https://github.com/magento/data-migration-tool" target="_blank"> Magento Data Migration repository</a>.</p>
 
 <p>The <a href="https://github.com/magento/code-migration" target="_blank">Code Migration Toolkit</a> helps transfer existing Magento 1.x store extensions and customizations to Magento 2.0.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.</p>
-
 
 
 		</div>
