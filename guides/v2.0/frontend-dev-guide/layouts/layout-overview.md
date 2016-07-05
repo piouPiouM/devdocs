@@ -50,7 +50,7 @@ The following figure shows an example:
 
 The following figure shows an example:
 
-<img src="{{ site.baseurl }}common/images/layouts_block_defn.jpg"/>.
+<img src="{{ site.baseurl }}common/images/layouts_block_defn.jpg"/>
 
 ## Basic layouts 
 
@@ -84,11 +84,11 @@ In this guide we use *layout files* when talking about concepts which are simila
 The following terms are used to distinguish layouts provided by different application components:
 
 * *Base layouts*: Layout files provided by modules. Conventional location: 
-	* Page configuration and generic layout files: `<module_dir>/view/frontend/layout`
-	* Page layout files: `<module_dir>/view/frontend/page_layout`
+	* Page configuration and generic layout files: `<module_dir>/view/frontend/layout`.
+	* Page layout files: `<module_dir>/view/frontend/page_layout`.
 * *Theme layouts*: Layout files provided by themes. Conventional location:
-	* Page configuration and generic layout files: `<theme_dir>/<Namespace>_<Module>/layout`
-	* Page layout files: `<theme_dir>/<Namespace>_<Module>/page_layout`
+	* Page configuration and generic layout files: `<theme_dir>/<Namespace>_<Module>/layout`.
+	* Page layout files: `<theme_dir>/<Namespace>_<Module>/page_layout`.
 
 
 ## Customize layout {#layout-custom}
@@ -103,7 +103,7 @@ To make the necessary changes, create <a href="{{page.baseurl}}frontend-dev-guid
 The Magento application processes layout files in the following order:
 
 1.	Collects all layout files from modules. The order is determined by the modules order in the module list from `app/etc/config.php`.
-2.	Determines the sequence of <a href="{{page.baseurl}}frontend-dev-guide/themes/theme-inherit.html" target="_blank">inherited</a> themes `[<parent_theme>, ..., <parent1_theme>] <current_theme>`
+2.	Determines the sequence of <a href="{{page.baseurl}}frontend-dev-guide/themes/theme-inherit.html" target="_blank">inherited</a> themes `[<parent_theme>, ..., <parent1_theme>] <current_theme>`.
 3.	Iterates the sequence of themes from last ancestor to current:
 
 	a.	Adds all extending theme layout files to the list.
