@@ -38,7 +38,7 @@ This article describes the following typical layout customization tasks:
 The type of page layout to be used for a certain page is defined in the page configuration file, in the `layout` attribute of the root <code>&lt;page&gt;</code> node.
 
 Example:
-Change the layout of Advanced Search page from default "1-column" to "2-column with left bar". To do this, extend `catalogsearch_advanced_index.xml` in your theme by adding the following layout:
+Change the layout of Advanced Search page from default "1-column" to "2-columns with left bar". To do this, extend `catalogsearch_advanced_index.xml` in your theme by adding the following layout:
 
 <b><code>app/design/frontend/&lt;Vendor&gt;/&lt;theme&gt;/Magento_CatalogSearch/layout/catalogsearch_advanced_index.xml</code></b>
 
@@ -214,7 +214,7 @@ Both approaches are demonstrated in the following examples of changing the templ
 
 In both example, the template is specified according to the following:
 
- * `Namespace_Module:` defines the module the template belongs to. For example, `Magento_Catalog`.
+ * `Namespace_Module`: defines the module the template belongs to. For example, `Magento_Catalog`.
  * `new_template.phtml`: the path to the template relatively to the `templates` directory. It might be `<module_dir>/view/<area>/templates` or `<theme_dir>/<Namespace_Module>/templates`.
 
 
@@ -262,20 +262,20 @@ There are two ways to access block object methods:
 - using the <a href="{{page.baseurl}}frontend-dev-guide/layouts/xml-instructions.html#argument"><code>&lt;argument&gt;</code></a> instruction for `<block>` or `<referenceBlock>`
 - using the <a href="{{page.baseurl}}frontend-dev-guide/layouts/xml-instructions.html#fedg_layout_xml-instruc_ex_act"><code>&lt;action&gt;</code></a> instruction. This way is not recommended, but can be used for calling those methods, which are not refactored yet to be accessed through `<argument>`. 
 
-Example 1: Set a CSS class and add an attribute for the product page using `<argument>`.
+**Example 1**: set a CSS class and add an attribute for the product page using `<argument>`.
 
 Extending layout:
 
 {%highlight xml%}
-	<referenceBlock name="page.main.title">
-		<arguments>
-		    <argument name="css_class" xsi:type="string">product</argument>
-		    <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
-		</arguments>
-	</referenceBlock>
+<referenceBlock name="page.main.title">
+    <arguments>
+        <argument name="css_class" xsi:type="string">product</argument>
+        <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
+    </arguments>
+</referenceBlock>
 {%endhighlight xml%}
 
-Example 2: Set a page title using `<action>`. 
+**Example 2**: set a page title using `<action>`. 
 
 <div class="bs-callout bs-callout-warning" id="info">
 <span class="glyphicon-class">
@@ -286,13 +286,13 @@ Example 2: Set a page title using `<action>`.
 Extending layout:
 
 {%highlight xml%}
-	...
-	<referenceBlock name="page.main.title">
-	    <action method="setPageTitle">
-	        <argument translate="true" name="title" xsi:type="string">Catalog Advanced Search</argument>
-	    </action>
-	</referenceBlock>
-	...
+...
+<referenceBlock name="page.main.title">
+    <action method="setPageTitle">
+        <argument translate="true" name="title" xsi:type="string">Catalog Advanced Search</argument>
+    </action>
+</referenceBlock>
+...
 {%endhighlight xml%}
 
 <h2 id="layout_markup_rearrange">Rearrange elements</h2>
